@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    h1= title
+    div
+        input(type="text", readonly="readonly", class="label", value="Fornavn:")
+        input#firstname(type="text", class="input")
+    div
+        input(type="text", readonly="readonly", class="label", value="Etternavn:")
+        input#lastname(type="text", class="input")
+    div
+        input(type="text", readonly="readonly", class="label", value="E-post:")
+        input#email(type="text", class="input")
+    div
+        input(type="text", readonly="readonly", class="label", value="Adresse:")
+        input#address(type="text", class="input")
+    div
+        input(type="text", readonly="readonly", class="label", value="Postnummer:")
+        input#postalcode(type="text", class="input")
+    div
+        input(type="text", readonly="readonly", class="label", value="Poststed:")
+        input#city(type="text", readonly="readonly", class="input")
+    div
+        input#submit(type="Submit", value="Send")
+
+
+    script(src='/javascripts/validation.js')
+
